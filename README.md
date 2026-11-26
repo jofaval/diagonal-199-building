@@ -20,6 +20,8 @@ La búsqueda directa en Google Imágenes no estuvo disponible durante el estudio
 
 ## Desarrollo y GitHub Pages
 
+**[Descargar la build de esta entrega](entrega/diagonal-199-pages.zip?raw=1)** (703 KiB). Contiene el sitio ya compilado, con `index.html` en la raíz. Para verlo sin instalar dependencias, descomprime el ZIP, ejecuta `python -m http.server 8000` en esa carpeta y abre `http://localhost:8000/`.
+
 Con Node.js 22.12 o posterior:
 
 ```sh
