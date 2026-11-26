@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <meta name="theme-color" content="#f7f6ef" />
+    <meta
+      name="description"
+      content="Diagonal 199, Barcelona. Una maqueta arquitectónica interactiva del encuentro entre la Diagonal y Ciutat de Granada."
+    />
+    <link rel="icon" href="./forma.svg" type="image/svg+xml" />
+    <title>Diagonal 199 — Forma, atlas de arquitectura</title>
+  </head>
+  <body>
+    <a class="skip" href="#visor">Saltar a la maqueta</a>
+    <header class="masthead">
+      <div class="brand">
+        <svg viewBox="0 0 34 34" aria-hidden="true">
+          <path d="M2 10 17 2l15 8-15 8Zm0 7 15 8 15-8M2 24l15 8 15-8" />
+        </svg>
+        <span>Forma<span class="brand-period">.</span></span>
+      </div>
+      <span class="brand-descriptor">Atlas de<br />arquitectura</span>
+      <div class="head-end">
+        <span class="issue"><i></i> Colección Barcelona</span
+        ><button class="head-notes" type="button" data-open-notes>
+          Cuaderno <i data-icon="notebook"></i>
+        </button>
+      </div>
+    </header>
+
+    <main class="spread">
+      <section class="intro" aria-labelledby="title">
+        <div class="kicker">
+          <span class="accent-rule"></span> Archivo urbano <span class="divider">/</span> BCN–001
+        </div>
+        <h1 id="title">Diagonal <em>199</em></h1>
+        <p class="dek">
+          Un estudio de la luz y el vidrio en la esquina de la Diagonal con Ciutat de Granada, Barcelona.
+        </p>
+        <div class="site-study">
+          <div class="small-title"><span>Plano de situación</span><span class="plate">Fig. A</span></div>
+          <svg
+            class="plan"
+            viewBox="0 0 272 105"
+            role="img"
+            aria-label="Croquis de situación: el conjunto señalado en el lado sur de la avenida Diagonal, junto a Ciutat de Granada"
+          >
+            <defs>
+              <pattern id="hatch" width="4" height="4" patternUnits="userSpaceOnUse">
+                <path d="M-1 1l2-2M0 4l4-4m-1 5 2-2" stroke="#bcc2b8" stroke-width=".65" />
+              </pattern>
+              <pattern id="grid" width="11" height="11" patternUnits="userSpaceOnUse">
+                <circle cx="1" cy="1" r=".55" fill="#a7afa5" />
+              </pattern>
+              <clipPath id="plan-clip"><rect width="272" height="105" /></clipPath>
+            </defs>
+            <rect width="272" height="105" fill="#edeee6" />
+            <rect width="272" height="105" fill="url(#grid)" />
+            <g clip-path="url(#plan-clip)">
+              <g fill="url(#hatch)" stroke="#9ba698" stroke-width=".8">
+                <path
+                  d="m-16 23 38-35h45L12 43-16 36zM25 47l56-59h48L63 59zM86 43l53-55h53l-62 65zM150 45l54-57h43l-49 49zM215 34l49-46h28v30l-47 12z"
+                />
+                <path
+                  d="m-14 88 27-27 34 10-28 34h-33zM35 110l33-37 28-5-37 42zM162 107l43-57 37-6-54 66zM207 110l54-69 26-4v24l-40 49z"
+                />
+              </g>
+              <path d="M-9 88 278 30M-7 77 278 19" stroke="#a7b1a4" fill="none" stroke-width="1" />
+              <path d="M-6 82 276 26" stroke="#bec6b9" stroke-width=".7" stroke-dasharray="4 3" />
+              <path
+                d="m81 109 35-44 15-3-39 48zm31 0 31-49 15-3-33 52z"
+                fill="#bec6b9"
+                stroke="#828f82"
+                stroke-width=".8"
+              />
+              <path d="m83 105 33-40 15-3-33 42z" fill="#b95034" stroke="#8d3a25" stroke-width="1" />
+              <circle cx="120" cy="67" r="2.8" fill="#fbf4e6" />
+              <path d="m123 63 13-21h13" fill="none" stroke="#9f402a" stroke-width="1" />
+              <rect x="148" y="34" width="26" height="13" rx="1.5" fill="#a7472e" />
+              <text
+                x="161"
+                y="43.8"
+                text-anchor="middle"
+                fill="white"
+                font-family="monospace"
+                font-size="9"
+              >
+                199
+              </text>
+              <text
+                x="22"
+                y="71"
+                transform="rotate(-11 22 71)"
+                font-size="6.3"
+                letter-spacing="1.2"
+                fill="#4c5a50"
+                font-family="monospace"
+              >
+                AV. DIAGONAL
+              </text>
+            </g>
+            <g transform="translate(247 83)" stroke="#35483a" stroke-width="1.1">
+              <path d="m-2.5 4 3-10 3 10-3-2z" fill="#475c4a" />
+            </g>
+            <text
+              x="248"
+              y="74"
+              text-anchor="middle"
+              fill="#35483a"
+              font-size="6.5"
+              font-family="monospace"
+            >
+              N
+            </text>
+          </svg>
+          <p class="coord">41.4041° N &nbsp; 2.1911° E</p>
+        </div>
+        <button class="text-link" type="button" data-open-notes>
+          <span>Sobre esta maqueta</span><i data-icon="arrow-up-right"></i>
+        </button>
+      </section>
+
+      <section id="visor" class="viewer" aria-label="Explorador de la maqueta" tabindex="-1">
+        <div class="stage" id="stage" data-light="dia">
+          <img
+            class="poster"
+            src="./maqueta.webp"
+            alt="Maqueta de Diagonal 199: basamento acristalado, torre clara y pieza vecina de tono champán, entre dos calles arboladas."
+          />
+          <div id="surface" class="surface"></div>
+          <span class="stage-tag"><i></i> Maqueta digital</span>
+          <button
+            type="button"
+            id="keys"
+            class="key-toggle live-control"
+            aria-pressed="false"
+            aria-controls="marks"
+            title="Identificar las piezas de la maqueta"
+            disabled
+          >
+            <i data-icon="pin"></i> Claves
+          </button>
+          <button
+            class="icon-button expand"
+            type="button"
+            id="expand"
+            aria-label="Ampliar el visor"
+            title="Ampliar el visor"
+          >
+            <i data-icon="expand"></i>
+          </button>
+          <div id="marks" hidden>
+            <button
+              type="button"
+              data-mark="0"
+              aria-label="01. Basamento de Diagonal 199"
+              aria-pressed="false"
+            >
+              01
+            </button>
+            <button
+              type="button"
+              data-mark="1"
+              aria-label="02. Volumen claro del hotel"
+              aria-pressed="false"
+            >
+              02
+            </button>
+            <button
+              type="button"
+              data-mark="2"
+              aria-label="03. Pieza vecina del 197"
+              aria-pressed="false"
+            >
+              03
+            </button>
+          </div>
+          <div id="field-note" class="field-note" hidden aria-live="polite"></div>
+          <div class="direction" aria-hidden="true">
+            <svg viewBox="0 0 36 43">
+              <text id="north-label" x="18" y="8" text-anchor="middle">N</text>
+              <g id="needle">
+                <path d="m18 11 5 21-5-4z" fill="currentColor" />
+                <path d="m18 11-5 21 5-4z" fill="none" stroke="currentColor" stroke-width="1" />
+              </g>
+            </svg>
+          </div>
+          <div class="stage-tools" aria-label="Controles de cámara">
+            <button
+              class="icon-button live-control"
+              type="button"
+              id="orbit"
+              aria-label="Activar giro automático"
+              aria-pressed="false"
+              title="Giro automático"
+              disabled
+            >
+              <i data-icon="orbit"></i>
+            </button>
+            <span class="tool-sep"></span>
+            <button
+              class="icon-button live-control"
+              type="button"
+              id="out"
+              aria-label="Alejar"
+              title="Alejar"
+              disabled
+            >
+              <i data-icon="minus"></i>
+            </button>
+            <button
+              class="icon-button live-control"
+              type="button"
+              id="in"
+              aria-label="Acercar"
+              title="Acercar"
+              disabled
+            >
+              <i data-icon="plus"></i>
+            </button>
+            <span class="tool-sep"></span>
+            <button
+              class="icon-button live-control"
+              type="button"
+              id="reset"
+              aria-label="Restablecer la vista"
+              title="Restablecer la vista"
+              disabled
+            >
+              <i data-icon="reset"></i>
+            </button>
+          </div>
+          <div id="status" class="stage-message" role="status">Preparando la maqueta…</div>
+          <noscript
+            ><style>
+              #status,
+              .stage-tools,
+              .key-toggle,
+              .head-notes,
+              .expand,
+              .text-link {
+                display: none;
+              }
+              .no-script {
+                top: auto;
+                bottom: 10px;
+                transform: translateX(-50%);
+              }
+            </style>
+            <p class="no-script">Vista fija. Activa JavaScript para explorar en 3D.</p></noscript
+          >
+        </div>
+        <div class="instruments">
+          <div class="instrument">
+            <div class="control-label">Punto de vista</div>
+            <div class="segmented" role="group" aria-label="Punto de vista">
+              <button type="button" data-view="conjunto" aria-pressed="true" disabled>
+                <i data-icon="cube"></i>Conjunto
+              </button>
+              <button type="button" data-view="calle" aria-pressed="false" disabled>
+                <i data-icon="facade"></i>Calle
+              </button>
+              <button type="button" data-view="cubierta" aria-pressed="false" disabled>
+                <i data-icon="layers"></i>Cubierta
+              </button>
+            </div>
+          </div>
+          <div class="instrument">
+            <div class="control-label">Luz ambiental</div>
+            <div class="segmented light-picker" role="group" aria-label="Luz ambiental">
+              <button type="button" data-light="dia" aria-pressed="true" disabled>
+                <i data-icon="sun"></i>Día
+              </button>
+              <button type="button" data-light="ocaso" aria-pressed="false" disabled>
+                <i data-icon="sunset"></i>Ocaso
+              </button>
+              <button type="button" data-light="noche" aria-pressed="false" disabled>
+                <i data-icon="moon"></i>Noche
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="figure-foot">
+          <span><b>Fig. 01</b> <span id="caption">Perspectiva del conjunto</span></span
+          ><span class="gesture"
+            ><i data-icon="mouse"></i> Arrastra para girar · Pellizca o usa la rueda para acercar</span
+          >
+        </div>
+      </section>
+    </main>
+    <footer class="folio">
+      <span>Forma <b>/</b> Estudios de ciudad</span><span>Barcelona <b>·</b> Sant Martí</span
+      ><span>Folio <b>001</b></span>
+    </footer>
+
+    <dialog id="notes" aria-labelledby="notes-title">
+      <div class="dialog-top">
+        <span class="kicker"><span class="accent-rule"></span> Archivo BCN–001</span
+        ><button class="icon-button" id="close" type="button" aria-label="Cerrar el cuaderno">
+          <i data-icon="close"></i>
+        </button>
+      </div>
+      <div class="note-grid">
+        <figure class="photo">
+          <img
+            src="./referencias/esquina.jpg"
+            width="500"
+            height="889"
+            loading="lazy"
+            alt="Fotografía a pie de calle del basamento de vidrio y del volumen claro retranqueado."
+          />
+          <figcaption>
+            Esquina de Diagonal y Ciutat de Granada.<br /><a
+              href="https://commons.wikimedia.org/wiki/File:Novotel_Barcelona_City.jpg"
+              target="_blank"
+              rel="noreferrer"
+              >Pere prlpz</a
+            >
+            ·
+            <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noreferrer"
+              >CC BY-SA 3.0</a
+            >.
+          </figcaption>
+        </figure>
+        <div class="note-copy">
+          <div class="kicker">Notas de campo</div>
+          <h2 id="notes-title">Cuaderno<br /><em>de la maqueta</em></h2>
+          <p>
+            Desde la calle se lee primero la esquina de vidrio oscuro. Por encima asoma un plano claro de
+            huecos estrechos; desde arriba se aprecia cómo las dos piezas se separan sin llegar a ser
+            paralelas.
+          </p>
+          <h3>Qué estás viendo</h3>
+          <p>
+            Una interpretación exterior del conjunto en torno al número 199. La torre del hotel y la
+            pieza vecina del 197 dan contexto al basamento. Las huellas se han simplificado; alturas,
+            carpinterías, mobiliario y luz son aproximaciones, no un levantamiento.
+          </p>
+          <h3>Contrastar las vistas</h3>
+          <ol class="sources">
+            <li>
+              <a
+                href="https://commons.wikimedia.org/wiki/File:Novotel_Barcelona_City.jpg"
+                target="_blank"
+                rel="noreferrer"
+                ><span>01</span> Esquina a pie de calle <i data-icon="arrow-up-right"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/Luciajs02/Barcelona-WebPage/blob/main/assets/novotel.jpg"
+                target="_blank"
+                rel="noreferrer"
+                ><span>02</span> Terraza y lámina de agua <i data-icon="arrow-up-right"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/teogoulas/dashboad-map/tree/master/data/geolayer"
+                target="_blank"
+                rel="noreferrer"
+                ><span>03</span> Huellas de la manzana <i data-icon="arrow-up-right"></i
+              ></a>
+            </li>
+          </ol>
+          <a
+            class="google-link"
+            href="https://www.google.com/search?tbm=isch&amp;q=Avinguda+Diagonal+199+Barcelona+Ciutat+de+Granada"
+            target="_blank"
+            rel="noreferrer"
+            >Buscar más fotos en Google Imágenes ↗</a
+          >
+        </div>
+      </div>
+    </dialog>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
